@@ -15,7 +15,7 @@ class MVVMActivity : AppCompatActivity() {
         textView=findViewById(R.id.textView)
         modle=ViewModelProvider(this,SavedStateViewModelFactory(application,this)).get(NameViewModel::class.java)
         val nameObserver=Observer<String>{
-            newName->textView.text=newName
+            newName->textView.text=newName 
         }
         modle.currentName.observe(this,nameObserver)
         modle.trange()
