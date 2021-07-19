@@ -40,8 +40,10 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'//使用expresso 來測試
+    androidTestImplementation 'androidx.test:runner:1.2.0' //使用expresso 來測試
+    androidTestImplementation 'androidx.test:rules:1.2.0' //使用expresso 來測試
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'//使用expresso 來測試
     implementation "androidx.fragment:fragment:1.1.0"
     implementation 'com.google.code.gson:gson:2.8.7'
     implementation 'com.squareup.retrofit2:retrofit:2.6.2'
@@ -57,4 +59,5 @@ dependencies {
     kapt 'com.google.dagger:dagger-compiler:2.21'
     implementation "org.koin:koin-core:2.0.1"
     implementation "org.koin:koin-android:2.0.1"
+    testImplementation 'org.mockito:mockito-core:3.1.0'
 }
