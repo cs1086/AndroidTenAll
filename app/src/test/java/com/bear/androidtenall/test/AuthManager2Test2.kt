@@ -18,7 +18,7 @@ class AuthManager2Test2 : TestCase() {
         val authManager = AuthManager2(loginService)
         Mockito.`when`(loginService.login("123456", "123456578"))
             .thenReturn(true)
-        val result = authManager.login("123456", "1234565789")
+        val result = authManager.login("123456", "123456578")
         Mockito.verify(loginService).login(Mockito.anyString(), Mockito.anyString())
         Assert.assertEquals(true, result)
     }
